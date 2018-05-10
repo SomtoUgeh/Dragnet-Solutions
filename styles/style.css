@@ -4,6 +4,9 @@
   --font-family-cap: CircularStd-Book, sans-serif;
   --font-family-nrm: Akkurat, sans-serif;
   --font-family-nrml: Akkurat-Light, sans-serif;
+  --black: #272727;
+  --red: #fc0d1c;
+  --bck-color: mistyrose;
 }
 
 * {
@@ -32,37 +35,160 @@ a {
   text-decoration: none;
 }
 
-.header_down {
+.header_holder {
+  width: 100%;
+  background: none;
   border-bottom: 1px solid #eee;
 }
 
 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navigation {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column;
-  width: 80%;
-  margin: 0 auto;
-  padding: 15px;
+  padding-bottom: 1.1em;
+  color: var(--black);
 }
 
 .logo a img {
-  width: 130px;
+  width: 8.125em;
+  margin-top: 1.25em;
 }
 
-header nav ul li {
+nav ul li {
   display: inline-block;
-  padding: 28px 15px 0 15px;
+  padding: 32px 15px 0 15px;
   text-transform: uppercase;
   font-family: var(--font-family-cap);
-  font-size: .75em;
+  font-size: 0.75em;
   line-height: 1.65;
   font-weight: 400;
 }
 
-.login {
-  border: 1px solid black;
-  border-radius: 4px;
-  padding: 10px 25px;
+nav ul li a {
+  color: var(--black);
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: var(--red);
+}
+
+nav ul li svg {
+  vertical-align: middle;
+  margin-top: 0.25em;
+  margin-left: 0.1875em;
+}
+
+/* .hero {
+  background: url(../images/business-woman-in-tech-office_4460x4460.jpg);
+  min-height: 38em;
+  background-size: cover;
+  background-position: top left;
+  object-fit: cover;
+} */
+
+.hero {
+  display: grid;
+  background: var(--bck-color);
+  min-height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+  justify-items: start;
+  align-content: end;
+}
+
+.hero_description {
   margin-left: 20px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  font-size: 20px;
+  width: 45%;
+}
+
+.hero_description a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer_bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 70px auto 40px auto;
+  text-align: center;
+}
+
+.footer_bar a {
+  text-decoration: none;
+  color: rgb(194, 191, 191);
+}
+
+.footer_bar ul {
+  padding-left: 0;
+}
+
+.footer_bar ul li {
+  list-style: none;
+  line-height: 2;
+}
+
+.footer_bar ul li:nth-child(1) a {
+  font-weight: 800;
+  margin-bottom: 20px;
   color: black;
 }
+
+.creator {
+  display: grid;
+  border-top: 1px solid #eee;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+  width: 85%;
+}
+
+.creator a {
+  color: rgb(194, 191, 191);
+}
+
+.copy {
+  justify-self: end;
+}
+
+/* Back to top start */
+.arrow {
+  float: right;
+}
+
+.arrow_active {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1.25em;
+  right: 1.875em;
+  z-index: 99;
+  font-size: 0.93em;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.75em;
+  border-radius: 4px;
+}
+/* Back to top end */
