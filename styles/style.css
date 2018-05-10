@@ -1,0 +1,68 @@
+@import "type.css";
+
+:root {
+  --font-family-cap: CircularStd-Book, sans-serif;
+  --font-family-nrm: Akkurat, sans-serif;
+  --font-family-nrml: Akkurat-Light, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family-nrml);
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header_down {
+  border-bottom: 1px solid #eee;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.logo a img {
+  width: 130px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 28px 15px 0 15px;
+  text-transform: uppercase;
+  font-family: var(--font-family-cap);
+  font-size: .75em;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.login {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin-left: 20px;
+  color: black;
+}
