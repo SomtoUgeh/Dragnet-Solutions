@@ -231,7 +231,7 @@ nav ul li svg {
 
 .testimony {
   width: 50%;
-  padding: 70px 0 20px;
+  padding: 70px 0 40px;
 }
 
 .testimony h2 {
@@ -281,7 +281,7 @@ nav ul li svg {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 70px;
-  margin: 70px auto 0;
+  margin: 100px auto;
   width: 90%;
 }
 
@@ -327,9 +327,25 @@ nav ul li svg {
   padding-top: 5px;
 }
 
-footer {
+#testifier2 {
+  padding-top: 60px;
+}
+
+.products {
+  background: #fafafa;
+}
+
+.product_content {
+  padding: 120px 0;
   width: 70%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.product_content h1 {
+  font-size: 3em;
+  line-height: 1.25em;
+  font-weight: 300;
 }
 
 .footer_bar {
@@ -366,10 +382,13 @@ footer {
   margin: 0 auto;
   padding: 40px 0 40px 0;
   width: 85%;
+  color: var(--grey);
+  font-family: var(--font-family-nrml);
 }
 
-.creator a {
-  color: rgb(194, 191, 191);
+.creator p a {
+  color: var(--red);
+  text-decoration: underline;
 }
 
 .copy {
