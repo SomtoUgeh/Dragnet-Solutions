@@ -262,6 +262,7 @@ nav ul li svg {
   padding: 32px;
   color: white;
   text-align: center;
+  height: 100%;
 }
 
 .box_image {
@@ -277,13 +278,14 @@ nav ul li svg {
 .ship_content h4 {
   font-size: 2em;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 20px auto 10px;
 }
 
 .box_content p,
 .ship_content p {
   line-height: 1.8em;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .box_content a,
