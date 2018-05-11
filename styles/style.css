@@ -180,7 +180,7 @@ nav ul li svg {
 }
 
 .platform {
-  background: #fafafa;
+  background: white;
 }
 
 .platform_content {
@@ -215,7 +215,12 @@ nav ul li svg {
   background: mistyrose;
 }
 
-#box1 {
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
   background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg)
     no-repeat no-repeat;
   height: 100%;
@@ -223,6 +228,33 @@ nav ul li svg {
   background-position: top left;
   object-fit: cover;
   width: 100%;
+}
+
+#box2 {
+  background: var(--bck-color)
+    url(../images/leaf-wall-office-space_4460x4460.jpg) no-repeat no-repeat;
+}
+
+#box3 {
+  background: var(--bck-color)
+    url(../images/black-and-yellow-electronic-chip_4460x4460.jpeg) no-repeat
+    no-repeat;
+}
+
+#box4 {
+  background: var(--bck-color)
+    url(../images/business-woman-in-tech-office_4460x4460.jpg) no-repeat
+    no-repeat;
+}
+
+#box5 {
+  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg)
+    no-repeat no-repeat;
+}
+
+#box6 {
+  background: var(--bck-color)
+    url(../images/programmer-focused-on-code_4460x4460.jpg) no-repeat no-repeat;
 }
 
 .box_content {
@@ -241,23 +273,26 @@ nav ul li svg {
   max-width: 100%;
 }
 
-.box_content h4 {
+.box_content h4,
+.ship_content h4 {
   font-size: 2em;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
-.box_content p {
+.box_content p,
+.ship_content p {
   line-height: 1.8em;
+  margin-bottom: 40px;
 }
 
-.box_content a {
-  margin-top: 15px;
-  text-align: right;
+.box_content a,
+.ship_content a {
   color: white;
 }
 
-.box_content a:hover {
+.box_content a:hover,
+.ship_content a:hover {
   text-decoration: underline;
 }
 
@@ -273,6 +308,58 @@ nav ul li svg {
 .more_services a:hover {
   color: var(--red);
   text-decoration: underline;
+}
+
+.software {
+  background: #fafafa;
+}
+
+.shipped {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 50px;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 800px;
+}
+
+.software_content {
+  padding: 80px 0 120px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.software_content h2 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin-bottom: 16px;
+}
+
+.software_content p {
+  font-family: var(--font-family-nrml);
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: var(--grey);
+  margin: 0;
+}
+
+.ship_content {
+  background: rgba(152, 0, 0, 0.75);
+  padding: 32px;
+  margin-top: 350px;
+  color: white;
+  text-align: center;
+}
+
+.ship_content p {
+  width: 80%;
+  margin: 0 auto 40px;
+}
+
+.ship_content a {
+  margin-top: 15px;
 }
 
 .testimony {
