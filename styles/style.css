@@ -331,21 +331,80 @@ nav ul li svg {
   padding-top: 60px;
 }
 
+.product_container {
+  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg)
+    no-repeat no-repeat;
+  min-height: 300px;
+  background-size: cover;
+  background-position: top left;
+  object-fit: cover;
+  width: 100%;
+}
+
 .products {
-  background: #fafafa;
+  background: rgba(0, 0, 0, 0.59);
 }
 
 .product_content {
-  padding: 120px 0;
+  padding: 80px 0 90px;
   width: 70%;
   margin: 0 auto;
   text-align: center;
+  color: white;
 }
 
 .product_content h1 {
   font-size: 3em;
   line-height: 1.25em;
   font-weight: 300;
+  margin-bottom: 0;
+}
+
+.product_content p {
+  margin-bottom: 40px;
+  font-family: var(--font-family-nrm);
+}
+
+.subscribe {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 75%;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  width: 95%;
+  color: white;
+}
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  background: none;
+}
+
+input {
+  font-size: 32px;
+  border: 0;
+  border-bottom: 2px solid white;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 3px;
+  cursor: text;
+  background: none;
+  color: white;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input::placeholder {
+  color: white;
 }
 
 .footer_bar {
@@ -355,42 +414,91 @@ nav ul li svg {
   text-align: center;
 }
 
-.footer_bar a {
-  text-decoration: none;
-  color: rgb(194, 191, 191);
+.footer_content {
+  background: #8e0101de;
+  padding: 100px 0;
 }
 
-.footer_bar ul {
-  padding-left: 0;
+.nav_down {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+  margin: 0 auto;
+  width: 70%;
+  line-height: 2.5em;
 }
 
-.footer_bar ul li {
-  list-style: none;
-  line-height: 2;
+.core_info {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1.5fr;
+  grid-gap: 20px;
 }
 
-.footer_bar ul li:nth-child(1) a {
+.social_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+}
+
+.core_info ul p,
+.social_container ul p {
   font-weight: 800;
-  margin-bottom: 20px;
-  color: black;
+}
+
+.core_info ul li a,
+.social_container ul li a {
+  color: white;
+  font-family: var(--font-family-nrm);
+}
+
+.core_info ul li a:hover,
+.social_container ul li a:hover {
+  text-decoration: underline;
+}
+
+.break {
+  border-top: 1px solid black;
+  margin-top: 33px;
+  width: 70%;
+}
+
+.abuja {
+  padding-top: 15px;
+}
+
+.abuja a {
+  color: white;
+}
+
+.social_btn svg {
+  font-size: 40px;
+}
+
+.facebook svg {
+  margin-left: 10px;
+}
+
+.owner {
+  width: 100%;
+  background: black;
 }
 
 .creator {
   display: grid;
-  border-top: 1px solid #eee;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   padding: 40px 0 40px 0;
-  width: 85%;
-  color: var(--grey);
+  width: 70%;
+  color: white;
   font-family: var(--font-family-nrml);
 }
 
-.creator p a {
-  color: var(--red);
-  text-decoration: underline;
+.creator a img {
+  width: 8.125em;
+  margin-top: 1em;
 }
 
 .copy {
   justify-self: end;
+  margin-top: 20px;
 }
