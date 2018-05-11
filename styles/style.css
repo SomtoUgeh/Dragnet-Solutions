@@ -560,7 +560,7 @@ input::placeholder {
 .social_container {
   display: grid;
   grid-template-columns: 1fr;
-  justify-self: center;
+  justify-self: end;
 }
 
 .core_info ul p,
