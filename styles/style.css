@@ -291,10 +291,6 @@ nav ul li svg {
 .box_content a,
 .ship_content a {
   color: white;
-}
-
-.box_content a:hover,
-.ship_content a:hover {
   text-decoration: underline;
 }
 
@@ -539,13 +535,6 @@ input:focus {
 
 input::placeholder {
   color: white;
-}
-
-.footer_bar {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 70px auto 40px auto;
-  text-align: center;
 }
 
 .footer_content {
