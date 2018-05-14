@@ -1,12 +1,13 @@
 var header = document.querySelector(".header_holder");
 var sticky = header.offsetTop;
+var nav_list = document.querySelectorAll(".nav_default");
 
 // Back to top function
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction();
   headerDown();
-  //   background();
+  linkChange();
 };
 
 function scrollFunction() {
@@ -27,9 +28,13 @@ function headerDown() {
 
 function linkChange() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    document.getElementById("myBtn").style.display = "block";
+    for (let nav of nav_list) {
+      nav.classList.add("nav_fixed");
+    }
   } else {
-    document.getElementById("myBtn").style.display = "none";
+    for (let nav of nav_list) {
+      nav.classList.remove("nav_fixed");
+    }
   }
 }
 

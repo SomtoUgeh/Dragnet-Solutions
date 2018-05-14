@@ -129,6 +129,10 @@ nav ul li a {
   letter-spacing: 1.2;
 }
 
+.nav_fixed {
+  color: var(--red);
+}
+
 nav ul li a:hover,
 nav ul li a:active {
   color: var(--black);
@@ -169,9 +173,9 @@ nav ul li svg {
 }
 
 .cta_demo {
-  color: var(--red);
-  background-color: #fff;
-  /* border: 2px solid var(--red); */
+  color: #fff;
+  background-color: var(--red);
+  border: 2px solid var(--red);
   opacity: 0.89;
   border-radius: 6px;
   font-size: 0.875em;
