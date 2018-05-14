@@ -77,8 +77,22 @@ header {
 }
 
 .header_holder {
-  border-bottom: 1px solid rgba(161, 161, 161, 0.26);
-  background: rgba(0, 0, 0, 0.49);
+  /* border-bottom: 1px solid rgba(161, 161, 161, 0.26); */
+  /* background: rgba(0, 0, 0, 0.49); */
+  background: var(--background);
+}
+
+.header_down {
+  /* border-bottom: 1px solid rgba(161, 161, 161, 0.26); */
+  /* background: rgba(0, 0, 0, 0.49); */
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 100;
+  width: 100%;
+  color: black;
+  height: 72.75px;
 }
 
 .wrapper {
@@ -111,11 +125,13 @@ nav ul li {
 
 nav ul li a {
   color: white;
+  font-weight: 800;
+  letter-spacing: 1.2;
 }
 
 nav ul li a:hover,
 nav ul li a:active {
-  color: var(--red);
+  color: var(--black);
 }
 
 nav ul li svg {
@@ -142,19 +158,21 @@ nav ul li svg {
 
 .hero h1 {
   font-size: 4em;
-  line-height: 1.15em;
+  line-height: 1.35em;
   font-weight: 300;
 }
 
 .avatar {
   text-transform: uppercase;
-  color: var(--red);
+  background: var(--red);
+  padding: 2px 5px;
 }
 
 .cta_demo {
-  color: #fff;
-  background-color: var(--red);
-  border: 2px solid var(--red);
+  color: var(--red);
+  background-color: #fff;
+  /* border: 2px solid var(--red); */
+  opacity: 0.89;
   border-radius: 6px;
   font-size: 0.875em;
   padding: 12px 48px;
