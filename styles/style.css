@@ -1,5 +1,4 @@
 @import "type.css";
-
 :root {
   --font-family-cap: CircularStd-Book, sans-serif;
   --font-family-nrm: Akkurat, sans-serif;
@@ -39,6 +38,7 @@ a {
 }
 
 /* Back to top start */
+
 .arrow {
   float: right;
 }
@@ -63,12 +63,11 @@ a {
   padding: 0.75em;
   border-radius: 4px;
 }
+
 /* Back to top end */
 
 header {
-  background: var(--bck-color)
-    url(../images/business-woman-in-tech-office_4460x4460.jpg) no-repeat
-    no-repeat;
+  background: var(--bck-color) url(../images/business-woman-in-tech-office_4460x4460.jpg) no-repeat no-repeat;
   min-height: 700px;
   background-size: cover;
   background-position: top left;
@@ -243,8 +242,7 @@ nav ul li svg {
 #box4,
 #box5,
 #box6 {
-  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg)
-    no-repeat no-repeat;
+  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg) no-repeat no-repeat;
   height: 100%;
   background-size: cover;
   background-position: top left;
@@ -253,30 +251,23 @@ nav ul li svg {
 }
 
 #box2 {
-  background: var(--bck-color)
-    url(../images/leaf-wall-office-space_4460x4460.jpg) no-repeat no-repeat;
+  background: var(--bck-color) url(../images/leaf-wall-office-space_4460x4460.jpg) no-repeat no-repeat;
 }
 
 #box3 {
-  background: var(--bck-color)
-    url(../images/black-and-yellow-electronic-chip_4460x4460.jpeg) no-repeat
-    no-repeat;
+  background: var(--bck-color) url(../images/black-and-yellow-electronic-chip_4460x4460.jpeg) no-repeat no-repeat;
 }
 
 #box4 {
-  background: var(--bck-color)
-    url(../images/business-woman-in-tech-office_4460x4460.jpg) no-repeat
-    no-repeat;
+  background: var(--bck-color) url(../images/business-woman-in-tech-office_4460x4460.jpg) no-repeat no-repeat;
 }
 
 #box5 {
-  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg)
-    no-repeat no-repeat;
+  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg) no-repeat no-repeat;
 }
 
 #box6 {
-  background: var(--bck-color)
-    url(../images/programmer-focused-on-code_4460x4460.jpg) no-repeat no-repeat;
+  background: var(--bck-color) url(../images/programmer-focused-on-code_4460x4460.jpg) no-repeat no-repeat;
 }
 
 .box_content {
@@ -485,8 +476,7 @@ nav ul li svg {
 }
 
 .product_container {
-  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg)
-    no-repeat no-repeat;
+  background: var(--bck-color) url(../images/learning-code-is-fun_4460x4460.jpg) no-repeat no-repeat;
   min-height: 300px;
   background-size: cover;
   background-position: top left;
